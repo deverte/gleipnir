@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "gleipnir"
+version = "0.1.0"
+description = ""
+authors = ["Artem Shepelin <deverte@ya.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+matplotlib = "^3.5.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pyinstaller = "4.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

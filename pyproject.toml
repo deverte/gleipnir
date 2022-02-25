@@ -1,16 +1,21 @@
 [tool.poetry]
 name = "gleipnir"
-version = "0.1.0"
+version = "0.2.0"
 description = ""
 authors = ["Artem Shepelin <deverte@ya.ru>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.10,<3.11"
 matplotlib = "^3.5.1"
+PyQt6 = "^6.2.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
-pyinstaller = "4.5"
+libsass = "^0.21.0"
+pyinstaller = "^4.9"
+
+[tool.poetry.scripts]
+gleipnir = "gleipnir.__main__:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

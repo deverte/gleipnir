@@ -1,0 +1,161 @@
+QSpinBox#dpiSpinBox::up-button, QSpinBox#dpiSpinBox::down-button, QSpinBox#dpiSpinBox, QMenu#menuHelp, QMenu#menuFile, QLineEdit#yAxisNameLineEdit, QLineEdit#xAxisNameLineEdit, QLineEdit#titleLineEdit, QLineEdit#outputFileLineEdit, FileLineEdit#inputFileLineEdit, QDoubleSpinBox#vMinDoubleSpinBox::up-button, QDoubleSpinBox#vMinDoubleSpinBox::down-button, QDoubleSpinBox#vMinDoubleSpinBox, QDoubleSpinBox#vMaxDoubleSpinBox::up-button, QDoubleSpinBox#vMaxDoubleSpinBox::down-button, QDoubleSpinBox#vMaxDoubleSpinBox, QComboBox#colormapComboBox::drop-down, QComboBox#colormapComboBox QAbstractItemView, QComboBox#colormapComboBox, QPushButton#savePushButton, QPushButton#saveAsPushButton, QPushButton#openFilePushButton, QPushButton#openAsFilePushButton, ColorButton {
+  border: 1px solid #172051;
+  border-radius: 4px;
+  background-color: #0f1016;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px; }
+
+QSpinBox#dpiSpinBox::up-button:hover, QSpinBox#dpiSpinBox::down-button:hover, QSpinBox#dpiSpinBox:focus, QSpinBox#dpiSpinBox:hover, QLineEdit#yAxisNameLineEdit:hover, QLineEdit#xAxisNameLineEdit:hover, QLineEdit#titleLineEdit:hover, QLineEdit#outputFileLineEdit:hover, FileLineEdit#inputFileLineEdit:hover, QDoubleSpinBox#vMinDoubleSpinBox::up-button:hover, QDoubleSpinBox#vMinDoubleSpinBox::down-button:hover, QDoubleSpinBox#vMinDoubleSpinBox:focus, QDoubleSpinBox#vMinDoubleSpinBox:hover, QDoubleSpinBox#vMaxDoubleSpinBox::up-button:hover, QDoubleSpinBox#vMaxDoubleSpinBox::down-button:hover, QDoubleSpinBox#vMaxDoubleSpinBox:focus, QDoubleSpinBox#vMaxDoubleSpinBox:hover, QComboBox#colormapComboBox::drop-down:hover, QComboBox#colormapComboBox:hover, QPushButton#savePushButton:hover, QPushButton#saveAsPushButton:hover, QPushButton#openFilePushButton:hover, QPushButton#openAsFilePushButton:hover, ColorButton:hover {
+  border: 1px solid #344291; }
+
+QLineEdit#yAxisNameLineEdit:focus, QLineEdit#xAxisNameLineEdit:focus, QLineEdit#titleLineEdit:focus, QLineEdit#outputFileLineEdit:focus, FileLineEdit#inputFileLineEdit:focus, QComboBox#colormapComboBox:focus, QPushButton#savePushButton:focus, QPushButton#saveAsPushButton:focus, QPushButton#openFilePushButton:focus, QPushButton#openAsFilePushButton:focus, ColorButton:focus {
+  border: 1px solid #4e63e3; }
+
+QSpinBox#dpiSpinBox, QMenuBar#menubar, QMenu#menuHelp, QMenu#menuFile, QLineEdit#yAxisNameLineEdit, QLineEdit#xAxisNameLineEdit, QLineEdit#titleLineEdit, QLineEdit#outputFileLineEdit, FileLineEdit#inputFileLineEdit, QLabel#yAxisNameLabel, QLabel#xAxisNameLabel, QLabel#vMinLabel, QLabel#vMaxLabel, QLabel#titleLabel, QLabel#titleColorLabel, QLabel#ticksColorLabel, QLabel#frameColorLabel, QLabel#dpiLabel, QLabel#colormapLabel, QLabel#centerLinesColorLabel, QLabel#backgroundColorLabel, QLabel#axesLabelsColorLabel, QLabel#axesColorLabel, QDoubleSpinBox#vMinDoubleSpinBox, QDoubleSpinBox#vMaxDoubleSpinBox, QComboBox#colormapComboBox::drop-down, QComboBox#colormapComboBox, QCheckBox#isShowFrameCheckBox, QCheckBox#isCenterLinesDisplayedCheckBox, QCheckBox#isBackgroundTransparentCheckBox, QPushButton#savePushButton, QPushButton#saveAsPushButton, QPushButton#openFilePushButton, QPushButton#openAsFilePushButton, ColorButton {
+  color: #d8e5e9; }
+
+QSpinBox#dpiSpinBox, QMenu#menuHelp, QMenu#menuFile, QLineEdit#yAxisNameLineEdit, QLineEdit#xAxisNameLineEdit, QLineEdit#titleLineEdit, QLineEdit#outputFileLineEdit, FileLineEdit#inputFileLineEdit, QDoubleSpinBox#vMinDoubleSpinBox, QDoubleSpinBox#vMaxDoubleSpinBox, QComboBox#colormapComboBox {
+  selection-background-color: #4e63e3; }
+
+ColorButton {
+  min-width: 60px; }
+
+QPushButton#openAsFilePushButton {
+  min-width: 60px; }
+
+QPushButton#openFilePushButton {
+  min-width: 60px; }
+
+QPushButton#saveAsPushButton {
+  min-width: 60px; }
+
+QPushButton#savePushButton {
+  min-width: 60px; }
+
+QCheckBox#isBackgroundTransparentCheckBox::indicator:checked {
+  background-color: #4e63e3;
+  border: 3px solid #172051;
+  border-radius: 4px; }
+
+QCheckBox#isBackgroundTransparentCheckBox::indicator:checked:hover {
+  border: 3px solid #344291; }
+
+QCheckBox#isBackgroundTransparentCheckBox::indicator:unchecked {
+  background-color: #172051;
+  border: 3px solid #172051; }
+
+QCheckBox#isBackgroundTransparentCheckBox::indicator:unchecked:hover {
+  border: 3px solid #344291; }
+
+QCheckBox#isCenterLinesDisplayedCheckBox::indicator:checked {
+  background-color: #4e63e3;
+  border: 3px solid #172051;
+  border-radius: 4px; }
+
+QCheckBox#isCenterLinesDisplayedCheckBox::indicator:checked:hover {
+  border: 3px solid #344291; }
+
+QCheckBox#isCenterLinesDisplayedCheckBox::indicator:unchecked {
+  background-color: #172051;
+  border: 3px solid #172051; }
+
+QCheckBox#isCenterLinesDisplayedCheckBox::indicator:unchecked:hover {
+  border: 3px solid #344291; }
+
+QCheckBox#isShowFrameCheckBox::indicator:checked {
+  background-color: #4e63e3;
+  border: 3px solid #172051;
+  border-radius: 4px; }
+
+QCheckBox#isShowFrameCheckBox::indicator:checked:hover {
+  border: 3px solid #344291; }
+
+QCheckBox#isShowFrameCheckBox::indicator:unchecked {
+  background-color: #172051;
+  border: 3px solid #172051; }
+
+QCheckBox#isShowFrameCheckBox::indicator:unchecked:hover {
+  border: 3px solid #344291; }
+
+QComboBox#colormapComboBox::drop-down {
+  width: 17px; }
+
+QDoubleSpinBox#vMaxDoubleSpinBox::down-button {
+  border-top-width: 0px;
+  width: 17px; }
+
+QDoubleSpinBox#vMaxDoubleSpinBox::up-button {
+  border-bottom-width: 0px;
+  width: 17px; }
+
+QDoubleSpinBox#vMaxDoubleSpinBox::down-button:hover {
+  border-top-width: 0px; }
+
+QDoubleSpinBox#vMaxDoubleSpinBox::up-button:hover {
+  border-bottom-width: 0px; }
+
+QDoubleSpinBox#vMinDoubleSpinBox::down-button {
+  border-top-width: 0px;
+  width: 17px; }
+
+QDoubleSpinBox#vMinDoubleSpinBox::up-button {
+  border-bottom-width: 0px;
+  width: 17px; }
+
+QDoubleSpinBox#vMinDoubleSpinBox::down-button:hover {
+  border-top-width: 0px; }
+
+QDoubleSpinBox#vMinDoubleSpinBox::up-button:hover {
+  border-bottom-width: 0px; }
+
+#axesGroupLine {
+  background-color: #172051; }
+
+#backgroundGroupLine {
+  background-color: #172051; }
+
+#centerLinesGroupLine {
+  background-color: #172051; }
+
+#colormapGroupLine {
+  background-color: #172051; }
+
+#frameGroupLine {
+  background-color: #172051; }
+
+#titleGroupLine {
+  background-color: #172051; }
+
+QMainWindow#MainWindow {
+  background-color: #0f1016; }
+
+QMenuBar#menubar {
+  background-color: #0f1016;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+QMenuBar#menubar::item {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+QMenuBar#menubar::item:selected {
+  background: #344291; }
+
+QMenuBar#menubar::item:pressed {
+  background: #4e63e3; }
+
+QSpinBox#dpiSpinBox::down-button {
+  border-top-width: 0px;
+  width: 17px; }
+
+QSpinBox#dpiSpinBox::up-button {
+  border-bottom-width: 0px;
+  width: 17px; }
+
+QSpinBox#dpiSpinBox::down-button:hover {
+  border-top-width: 0px; }
+
+QSpinBox#dpiSpinBox::up-button:hover {
+  border-bottom-width: 0px; }

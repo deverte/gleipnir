@@ -1,0 +1,317 @@
+// Widgets
+
+$buttons:
+"ColorButton",
+"QPushButton#openAsFilePushButton",
+"QPushButton#openFilePushButton",
+"QPushButton#saveAsPushButton",
+"QPushButton#savePushButton";
+
+$checkboxes:
+"QCheckBox#isBackgroundTransparentCheckBox",
+"QCheckBox#isCenterLinesDisplayedCheckBox",
+"QCheckBox#isShowFrameCheckBox";
+
+$comboboxes:
+"QComboBox#colormapComboBox";
+
+$doublespinboxes:
+"QDoubleSpinBox#vMaxDoubleSpinBox",
+"QDoubleSpinBox#vMinDoubleSpinBox";
+
+$labels:
+"QLabel#axesColorLabel",
+"QLabel#axesLabelsColorLabel",
+"QLabel#backgroundColorLabel",
+"QLabel#centerLinesColorLabel",
+"QLabel#colormapLabel",
+"QLabel#dpiLabel",
+"QLabel#frameColorLabel",
+"QLabel#ticksColorLabel",
+"QLabel#titleColorLabel",
+"QLabel#titleLabel",
+"QLabel#vMaxLabel",
+"QLabel#vMinLabel",
+"QLabel#xAxisNameLabel",
+"QLabel#yAxisNameLabel";
+
+$lines:
+"#axesGroupLine",
+"#backgroundGroupLine",
+"#centerLinesGroupLine",
+"#colormapGroupLine",
+"#frameGroupLine",
+"#titleGroupLine";
+
+$lineedits:
+"FileLineEdit#inputFileLineEdit",
+"QLineEdit#outputFileLineEdit",
+"QLineEdit#titleLineEdit",
+"QLineEdit#xAxisNameLineEdit",
+"QLineEdit#yAxisNameLineEdit";
+
+$mainwindows:
+"QMainWindow#MainWindow";
+
+$menus:
+"QMenu#menuFile",
+"QMenu#menuHelp";
+
+$menubars:
+"QMenuBar#menubar";
+
+$spinboxes:
+"QSpinBox#dpiSpinBox";
+
+
+// Colors
+
+$main-background-color: #0f1016;
+$widget-background-color: #0f1016;
+$border-color: #172051;
+$border-hover-color: #344291;
+$border-focus-color: #4e63e3;
+$font-color: #d8e5e9;
+
+
+// Extensions
+
+%control-widget {
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    background-color: $widget-background-color;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+%control-widget-hover {
+    border: 1px solid $border-hover-color;
+}
+
+%control-widget-focus {
+    border: 1px solid $border-focus-color;
+}
+
+%font {
+    color: $font-color;
+}
+
+%selection {
+    selection-background-color: $border-focus-color;
+}
+
+
+// Styles
+
+@each $button in $buttons {
+    #{$button} {
+        @extend %control-widget;
+        @extend %font;
+        min-width: 60px;
+    }
+
+    #{$button}:hover {
+        @extend %control-widget-hover;
+    }
+
+    #{$button}:focus {
+        @extend %control-widget-focus;
+    }
+}
+
+@each $checkbox in $checkboxes {
+    #{$checkbox} {
+        @extend %font;
+    }
+
+    #{$checkbox}::indicator:checked {
+        background-color: $border-focus-color;
+        border: 3px solid $border-color;
+        border-radius: 4px;
+    }
+
+    #{$checkbox}::indicator:checked:hover {
+        border: 3px solid $border-hover-color;
+    }
+
+    #{$checkbox}::indicator:unchecked {
+        background-color: $border-color;
+        border: 3px solid $border-color;
+    }
+
+    #{$checkbox}::indicator:unchecked:hover {
+        border: 3px solid $border-hover-color;
+    }
+}
+
+@each $combobox in $comboboxes {
+    #{$combobox} {
+        @extend %control-widget;
+        @extend %font;
+        @extend %selection;
+    }
+
+    #{$combobox}:hover {
+        @extend %control-widget-hover;
+    }
+
+    #{$combobox}:focus {
+        @extend %control-widget-focus;
+    }
+
+    #{$combobox} QAbstractItemView {
+        @extend %control-widget;
+    }
+
+    #{$combobox}::drop-down {
+        @extend %font;
+        @extend %control-widget;
+        width: 17px;
+    }
+
+    #{$combobox}::drop-down:hover {
+        @extend %control-widget-hover;
+    }
+}
+
+@each $doublespinbox in $doublespinboxes {
+    #{$doublespinbox} {
+        @extend %control-widget;
+        @extend %font;
+        @extend %selection;
+    }
+
+    #{$doublespinbox}:hover {
+        @extend %control-widget-hover;
+    }
+
+    #{$doublespinbox}:focus {
+        @extend %control-widget-hover;
+    }
+
+    #{$doublespinbox}::down-button {
+        @extend %control-widget;
+        border-top-width: 0px;
+        width: 17px;
+    }
+
+    #{$doublespinbox}::up-button {
+        @extend %control-widget;
+        border-bottom-width: 0px;
+        width: 17px;
+    }
+
+    #{$doublespinbox}::down-button:hover {
+        @extend %control-widget-hover;
+        border-top-width: 0px;
+    }
+
+    #{$doublespinbox}::up-button:hover {
+        @extend %control-widget-hover;
+        border-bottom-width: 0px;
+    }
+}
+
+@each $label in $labels {
+    #{$label} {
+        @extend %font;
+    }
+}
+
+@each $line in $lines {
+    #{$line} {
+        background-color: $border-color;
+    }
+}
+
+@each $lineedit in $lineedits {
+    #{$lineedit} {
+        @extend %control-widget;
+        @extend %font;
+        @extend %selection;
+    }
+
+    #{$lineedit}:hover {
+        @extend %control-widget-hover;
+    }
+
+    #{$lineedit}:focus {
+        @extend %control-widget-focus;
+    }
+}
+
+@each $mainwindow in $mainwindows {
+    #{$mainwindow} {
+        background-color: $main-background-color;
+    }
+}
+
+@each $menu in $menus {
+    #{$menu} {
+        @extend %control-widget;
+        @extend %font;
+        @extend %selection;
+    }
+}
+
+@each $menubar in $menubars {
+    #{$menubar} {
+        @extend %font;
+        background-color: $widget-background-color;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #{$menubar}::item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #{$menubar}::item:selected {
+        background: $border-hover-color;
+    }
+
+    #{$menubar}::item:pressed {
+        background: $border-focus-color;
+    }
+}
+
+@each $spinbox in $spinboxes {
+    #{$spinbox} {
+        @extend %control-widget;
+        @extend %font;
+        @extend %selection;
+    }
+
+    #{$spinbox}:hover {
+        @extend %control-widget-hover;
+    }
+
+    #{$spinbox}:focus {
+        @extend %control-widget-hover;
+    }
+
+    #{$spinbox}::down-button {
+        @extend %control-widget;
+        border-top-width: 0px;
+        width: 17px;
+    }
+
+    #{$spinbox}::up-button {
+        @extend %control-widget;
+        border-bottom-width: 0px;
+        width: 17px;
+    }
+
+    #{$spinbox}::down-button:hover {
+        @extend %control-widget-hover;
+        border-top-width: 0px;
+    }
+
+    #{$spinbox}::up-button:hover {
+        @extend %control-widget-hover;
+        border-bottom-width: 0px;
+    }
+}

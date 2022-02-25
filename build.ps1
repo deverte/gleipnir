@@ -1,1 +1,0 @@
-poetry run pyinstaller -F gleipnir/gleipnir.pyw --exclude-module _bootlocale --clean --noconfirm

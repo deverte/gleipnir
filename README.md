@@ -126,7 +126,7 @@ The following command will build a single portable executable:
 poetry run pyinstaller -F --add-data "gleipnir/ui/main.ui;gleipnir/ui" --add-data "gleipnir/ui/dark_theme.qss;gleipnir/ui" --hidden-import "gleipnir.ui.file_line_edit.view" --hidden-import "gleipnir.ui.color_button.view" --clean --noconfirm --windowed gleipnir/__main__.py --name gleipnir
 ```
 
-The resultint `gleipnir.exe` will be in `dist` directory.
+The resulting `gleipnir.exe` will be in `dist` directory.
 
 > For the Scoop, it's also needed to compress the resulting `gleipnir.exe` file into a zip archive.
 >

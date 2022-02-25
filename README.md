@@ -79,7 +79,6 @@ Also you can [download](https://github.com/deverte/gleipnir/releases) a single e
 
 - [Matplotlib](https://matplotlib.org/)
 - [PyQt](https://www.riverbankcomputing.com/software/pyqt/intro)
-- [libsass-python](https://github.com/sass/libsass-python)
 
 ## Build Instructions
 

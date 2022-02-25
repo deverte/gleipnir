@@ -34,7 +34,7 @@ AbsPlot
 If you want to install Gleipnir as independent application, it is recommended to use [pipx](https://pypa.github.io/pipx/).
 
 ```sh
-pipx install exoplanet-gleipnir
+pipx install https://github.com/deverte/gleipnir/releases/download/v0.2.0/gleipnir-0.2.0-py3-none-any.whl
 ```
 
 > Additionally, you can create application shortcut:
@@ -47,11 +47,7 @@ pipx install exoplanet-gleipnir
 > $shortcut = (New-Object -COM WScript.Shell).CreateShortcut('$env:UserProfile\Desktop\Gleipnir.lnk'); $shortcut.TargetPath='$env:PIPX_BIN_DIR\gleipnir.exe'; $shortcut.Save()
 > ```
 
-You can also install Gleipnir using [pip](https://pip.pypa.io/en/stable/).
-
-```sh
-pip install exoplanet-gleipnir
-```
+But you can also install Gleipnir using [pip](https://pip.pypa.io/en/stable/) by the same way.
 
 > Application shortcut creation instruction:
 > On GNU/Linux (XDG-compatible desktop environment) run:

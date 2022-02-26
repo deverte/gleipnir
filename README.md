@@ -40,7 +40,7 @@ pipx install https://github.com/deverte/gleipnir/releases/download/v0.2.0/gleipn
 > Additionally, you can create application shortcut:
 > On GNU/Linux (XDG-compatible desktop environment) run:
 > ```sh
-> echo "[Desktop Entry]\nName=Gleipnir\nExec=$PIPX_BIN_DIR/gleipnir\nType=Application\nTerminal=false" > ~/.local/share/applications; cp ~/.local/share/applications/Gleipnir.desktop ~/Desktop
+> echo "[Desktop Entry]\nName=Gleipnir\nExec=$PIPX_BIN_DIR/gleipnir\nType=Application\nTerminal=false" > ~/.local/share/applications/Gleipnir.desktop; cp ~/.local/share/applications/Gleipnir.desktop ~/Desktop
 > ```
 > On Windows run (use PowerShell):
 > ```sh
@@ -52,7 +52,7 @@ But you can also install Gleipnir using [pip](https://pip.pypa.io/en/stable/) by
 > Application shortcut creation instruction:
 > On GNU/Linux (XDG-compatible desktop environment) run:
 > ```sh
-> echo "[Desktop Entry]\nName=Gleipnir\nExec=python -m gleipnir\nType=Application\nTerminal=false" > ~/.local/share/applications; cp ~/.local/share/applications/Gleipnir.desktop ~/Desktop
+> echo "[Desktop Entry]\nName=Gleipnir\nExec=python -m gleipnir\nType=Application\nTerminal=false" > ~/.local/share/applications/Gleipnir.desktop; cp ~/.local/share/applications/Gleipnir.desktop ~/Desktop
 > ```
 > On Windows run (use PowerShell):
 > ```sh
